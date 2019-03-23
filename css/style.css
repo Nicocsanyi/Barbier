@@ -253,9 +253,11 @@ span {
 
 
 a[href^="tel"] {
-  color: inherit; /* Inherit text color of parent element. */
-  text-decoration: none; /* Remove underline. */
-  /* Additional css `propery: value;` pairs here */
+    color: inherit;
+    /* Inherit text color of parent element. */
+    text-decoration: none;
+    /* Remove underline. */
+    /* Additional css `propery: value;` pairs here */
 }
 
 
@@ -264,6 +266,10 @@ a[href^="tel"] {
 @media all and (min-width: 768px) and (max-width: 1024px) {}
 
 @media all and (min-width: 480px) and (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+    }
+
     .contact {
         flex-direction: column;
     }
@@ -271,18 +277,25 @@ a[href^="tel"] {
     span {
         display: none;
     }
-.contact p {
- margin-bottom:5px;
-}
+
+    .contact p {
+        margin-bottom: 5px;
+    }
 }
 
 @media all and (max-width: 480px) {
+    h1 {
+        font-size: 4em;
+    }
+
     .contact {
         flex-direction: column;
     }
-.contact p {
- margin-bottom:5px;
-}
+
+    .contact p {
+        margin-bottom: 5px;
+    }
+
     span {
         display: none;
     }
