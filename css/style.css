@@ -106,17 +106,31 @@ h1 {
     text-transform: uppercase;
     margin-top: 50px;
     font-family: "jibril";
-    font-size: 4em;
-    color: white;
-    line-height: 70px;
+    font-size: 6em;
+    line-height: 110px;
+    background: -moz-linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(177, 147, 71, 1)), color-stop(45%, rgba(224, 203, 110, 1)), color-stop(100%, rgba(177, 147, 71, 1)));
+    /* safari4+,chrome */
+    background: -webkit-linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    /* ie10+ */
+    background: linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B19347', endColorstr='#B19347', GradientType=1);
+    /* ie6-9 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 30px rgba(179, 155, 89, 0.25);
 }
 
 p {
     font-size: 2em;
     color: white;
 }
-
-a {}
 
 h3 {
     text-transform: uppercase;
@@ -179,6 +193,7 @@ button {
 
 /* Button */
 .button {
+    font-family: "jibril";
     background-color: rgba(0, 0, 0, 0.1);
     border: none;
     color: white;
@@ -186,7 +201,7 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     margin: 4px 2px;
     -webkit-transition-duration: 0.4s;
     /* Safari */
@@ -210,36 +225,50 @@ button {
 }
 
 .women {
+    font-family: "jibril";
     color: white;
     text-transform: uppercase;
     position: absolute;
     top: 20px;
     text-align: center;
     width: 100%;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .subtitel {
+    font-family: "jibril";
     color: white;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1em;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
 }
 
 .map {
     width: 250px;
 }
 
-.contactform {
-    display: flex;
-    width: 100%;
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+
 }
 
-.slide1 {
-    width: 45%;
+@media all and (min-width: 768px) and (max-width: 1024px) {
+
 }
 
-.slide2 {
-    width: 45%;
+@media all and (min-width: 480px) and (max-width: 768px) {
+
+}
+
+@media all and (max-width: 480px) {
+    
 }
