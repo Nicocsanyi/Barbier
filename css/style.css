@@ -121,7 +121,7 @@ main{
     font-family: "jibril";
     color: white;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
 }
 
 h2 {
@@ -133,15 +133,23 @@ h2 {
 }
 .bottom{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     margin-bottom:20px;
+}
+.contact{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .bottom p{
         font-family: "jibril";
     color: white;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 12px;
+}
+.socials{
+    margin-bottom:20px;
 }
 
 
@@ -223,15 +231,19 @@ span{
     box-shadow: 0 5px 15px rgba(182, 157, 85, .3);
     color: white;
 }
+.facebook{
+    width:20px;
+}
 
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
 
 @media all and (min-width: 768px) and (max-width: 1024px) {}
 
-@media all and (min-width: 480px) and (max-width: 768px) {.bottom{
+@media all and (min-width: 480px) and (max-width: 768px) {.contact{
     flex-direction: column;
-}}
+}
+}
 
-@media all and (max-width: 480px) {.bottom{
+@media all and (max-width: 480px) {.contact{
     flex-direction: column;}
