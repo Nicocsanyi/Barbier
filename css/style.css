@@ -106,17 +106,20 @@ header {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
-    text-align:center;
-    display:flex;
+    text-align: center;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-main{
+
+main {
     height: 100vh;
 }
-.top{
-    margin-top:20px;
+
+.top {
+    margin-top: 20px;
 }
+
 .top p {
     font-family: "jibril";
     color: white;
@@ -129,27 +132,31 @@ h2 {
     color: white;
     text-transform: uppercase;
     font-size: 1em;
-    margin-bottom:50px;
+    margin-bottom: 50px;
 }
-.bottom{
-    display:flex;
+
+.bottom {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
 }
-.contact{
-    display:flex;
+
+.contact {
+    display: flex;
     flex-direction: row;
     justify-content: center;
 }
-.bottom p{
-        font-family: "jibril";
+
+.bottom p {
+    font-family: "jibril";
     color: white;
     text-transform: uppercase;
     font-size: 12px;
 }
-.socials{
-    margin-bottom:20px;
+
+.socials {
+    margin-bottom: 20px;
 }
 
 
@@ -157,7 +164,7 @@ h1 {
     text-transform: uppercase;
     font-family: "jibril";
     font-size: 6em;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     background: -moz-linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
     /* ff3.6+ */
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(177, 147, 71, 1)), color-stop(45%, rgba(224, 203, 110, 1)), color-stop(100%, rgba(177, 147, 71, 1)));
@@ -194,8 +201,9 @@ h3 {
 button {
     outline: none; // this one
 }
-span{
-    color:white;
+
+span {
+    color: white;
 }
 
 
@@ -231,19 +239,42 @@ span{
     box-shadow: 0 5px 15px rgba(182, 157, 85, .3);
     color: white;
 }
-.facebook{
-    width:20px;
+
+.facebook {
+    width: 20px;
+    padding-right: 10px;
 }
 
+.instagram {
+    padding-left: 10px;
+    width: 20px;
+}
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
 
 @media all and (min-width: 768px) and (max-width: 1024px) {}
 
-@media all and (min-width: 480px) and (max-width: 768px) {.contact{
-    flex-direction: column;
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+    }
+
+    span {
+        display: none;
+    }
+.contact p {
+ margin-bottom:5px;
 }
 }
 
-@media all and (max-width: 480px) {.contact{
-    flex-direction: column;}
+@media all and (max-width: 480px) {
+    .contact {
+        flex-direction: column;
+    }
+.contact p {
+ margin-bottom:5px;
+}
+    span {
+        display: none;
+    }
+}
