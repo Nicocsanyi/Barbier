@@ -115,7 +115,10 @@ p {
     font-size: 2em;
     color: white;
 }
-h3{
+
+a {}
+
+h3 {
     text-transform: uppercase;
     font-family: "jibril";
     font-size: 2.5em;
@@ -126,41 +129,47 @@ h3{
     text-align: center;
     width: 100%;
 }
-input{
+
+input {
     background-color: transparent;
     border: 0px solid;
     height: 20px;
     width: 160px;
     color: white;
-    border-bottom:2px solid white;
-}
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-  opacity: 1; /* Firefox */
+    border-bottom: 2px solid white;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: white;
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: white;
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
 }
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: white;
+}
+
+button {
+    outline: none; // this one
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     background-color: white;
-    border:none;
-    border-bottom:50px solid white;
 }
 
 
 #section0 {
     text-align: center;
-    background: url(../image/background0.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background-color: transparent !important;
+
 }
 
 #section1 {
@@ -201,7 +210,7 @@ input{
 }
 
 .women {
-    color:white;
+    color: white;
     text-transform: uppercase;
     position: absolute;
     top: 20px;
@@ -211,22 +220,26 @@ input{
 }
 
 .subtitel {
-    color:white;
+    color: white;
     text-transform: uppercase;
     font-size: 1.5em;
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.map{
-    width:250px;
+
+.map {
+    width: 250px;
 }
-.contactform{
-    display:flex;
-    width:100%;
+
+.contactform {
+    display: flex;
+    width: 100%;
 }
-.slide1{
-    width:45%;
+
+.slide1 {
+    width: 45%;
 }
-.slide2{
-    width:45%;
+
+.slide2 {
+    width: 45%;
 }
