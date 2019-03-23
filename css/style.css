@@ -102,12 +102,54 @@ acronym {
 /* Custom CSS
  * --------------------------------------- */
 
+header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main{
+    height: 100vh;
+}
+.top{
+    margin-top:20px;
+}
+.top p {
+    font-family: "jibril";
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+h2 {
+    font-family: "jibril";
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom:50px;
+}
+.bottom{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom:20px;
+}
+.bottom p{
+        font-family: "jibril";
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
 h1 {
     text-transform: uppercase;
-    margin-top: 50px;
     font-family: "jibril";
     font-size: 6em;
-    line-height: 110px;
+    margin-bottom:20px;
     background: -moz-linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
     /* ff3.6+ */
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(177, 147, 71, 1)), color-stop(45%, rgba(224, 203, 110, 1)), color-stop(100%, rgba(177, 147, 71, 1)));
@@ -138,56 +180,14 @@ h3 {
     font-size: 2.5em;
     color: white;
     line-height: 70px;
-    position: absolute;
-    top: 70px;
-    text-align: center;
-    width: 100%;
-}
-
-input {
-    background-color: transparent;
-    border: 0px solid;
-    height: 20px;
-    width: 160px;
-    color: white;
-    border-bottom: 2px solid white;
-}
-
-::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: white;
-    opacity: 1;
-    /* Firefox */
-}
-
-:-ms-input-placeholder {
-    /* Internet Explorer 10-11 */
-    color: white;
-}
-
-::-ms-input-placeholder {
-    /* Microsoft Edge */
-    color: white;
+    text-align: center
 }
 
 button {
     outline: none; // this one
 }
-
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-    background-color: white;
-}
-
-
-#section0 {
-    text-align: center;
-    background-color: transparent !important;
-
-}
-
-#section1 {
-    background-color: #0A0E12 !important;
+span{
+    color:white;
 }
 
 
@@ -224,51 +224,14 @@ button {
     color: white;
 }
 
-.women {
-    font-family: "jibril";
-    color: white;
-    text-transform: uppercase;
-    position: absolute;
-    top: 20px;
-    text-align: center;
-    width: 100%;
-    font-size: 1em;
-}
 
-.subtitel {
-    font-family: "jibril";
-    color: white;
-    text-transform: uppercase;
-    font-size: 1em;
-    margin-top: 50px;
-    margin-bottom: 120px;
-}
+@media all and (min-width: 1024px) and (max-width: 1280px) {}
 
-.map {
-    width: 250px;
-}
+@media all and (min-width: 768px) and (max-width: 1024px) {}
 
+@media all and (min-width: 480px) and (max-width: 768px) {.bottom{
+    flex-direction: column;
+}}
 
-
-
-
-
-
-
-
-
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-
-}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-
-}
-
-@media all and (min-width: 480px) and (max-width: 768px) {
-
-}
-
-@media all and (max-width: 480px) {
-    
-}
+@media all and (max-width: 480px) {.bottom{
+    flex-direction: column;}
