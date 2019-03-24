@@ -114,6 +114,7 @@ header {
 
 main {
     height: 100vh;
+    background-color:#090D12;
 }
 
 .top {
@@ -165,17 +166,17 @@ h1 {
     font-family: "jibril";
     font-size: 6em;
     margin-bottom: 20px;
-    background: -moz-linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    background: -moz-radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
     /* ff3.6+ */
     background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(177, 147, 71, 1)), color-stop(45%, rgba(224, 203, 110, 1)), color-stop(100%, rgba(177, 147, 71, 1)));
     /* safari4+,chrome */
-    background: -webkit-linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    background: -webkit-radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
     /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    background: -o-radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
     /* opera 11.10+ */
-    background: -ms-linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    background: -ms-radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
     /* ie10+ */
-    background: linear-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    background: radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
     /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B19347', endColorstr='#B19347', GradientType=1);
     /* ie6-9 */
@@ -249,7 +250,6 @@ span {
     padding-left: 10px;
     width: 20px;
 }
-
 
 
 a[href^="tel"] {
