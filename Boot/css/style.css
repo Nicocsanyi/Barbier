@@ -1,0 +1,224 @@
+@font-face {
+    font-family: "jibril";
+    src: url("../fonts/jibril.ttf");
+}
+
+/* Reset CSS
+ * --------------------------------------- */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-weight: normal;
+    font-style: normal;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ol,
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+caption,
+th {
+    text-align: left;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    color: #444;
+}
+
+q:before,
+q:after {
+    content: '';
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+
+header {
+    height: 100vh;
+}
+
+
+
+h2 {
+    font-family: "jibril";
+    color: white;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin-bottom: 50px;
+}
+
+
+.bottom p {
+    font-family: "jibril";
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "jibril";
+    font-size: 6em;
+    margin-bottom: 20px;
+    background: -moz-radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    /* ff3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(177, 147, 71, 1)), color-stop(45%, rgba(224, 203, 110, 1)), color-stop(100%, rgba(177, 147, 71, 1)));
+    /* safari4+,chrome */
+    background: -webkit-radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    /* safari5.1+,chrome10+ */
+    background: -o-radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    /* opera 11.10+ */
+    background: -ms-radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    /* ie10+ */
+    background: radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B19347', endColorstr='#B19347', GradientType=1);
+    /* ie6-9 */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 1px 1px 30px rgba(179, 155, 89, 0.25);
+}
+
+p {
+    font-size: 2em;
+    color: white;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-family: "jibril";
+    font-size: 2.5em;
+    color: white;
+    line-height: 70px;
+    text-align: center
+}
+
+button {
+    outline: none; // this one
+}
+
+span {
+    color: white;
+}
+
+
+/* Button */
+.button {
+    font-family: "jibril";
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    width: 250px;
+}
+
+.button1 {
+    color: white;
+    border: 1px solid #B69D55;
+    transition: all 0.2s ease-in-out;
+    text-transform: uppercase;
+}
+
+.button1:hover {
+    -webkit-box-shadow: 0 5px 15px rgba(182, 157, 85, .3);
+    -moz-box-shadow: 0 5px 15px rgba(182, 157, 85, .3);
+    box-shadow: 0 5px 15px rgba(182, 157, 85, .3);
+    color: white;
+}
+
+.facebook {
+    width: 20px;
+    padding-right: 10px;
+}
+
+.instagram {
+    padding-left: 10px;
+    width: 20px;
+}
+
+
+a[href^="tel"] {
+    color: inherit;
+    /* Inherit text color of parent element. */
+    text-decoration: none;
+    /* Remove underline. */
+    /* Additional css `propery: value;` pairs here */
+}
