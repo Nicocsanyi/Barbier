@@ -124,7 +124,7 @@ h2 {
     text-transform: uppercase;
     font-size: 1em;
     margin-bottom: 50px;
-    text-align:center;
+    text-align: center;
 }
 
 .bottom {
@@ -164,7 +164,7 @@ h1 {
     text-shadow: 1px 1px 30px rgba(179, 155, 89, 0.25);
 }
 
-p {
+.toptekst {
     font-size: 2em;
     color: white;
 }
@@ -175,11 +175,11 @@ h3 {
     font-size: 2.5em;
     color: white;
     line-height: 70px;
-    text-align: center
+    text-align: left;
 }
 
-.button {
-    outline: none;
+button:focus {
+    outline: 0;
 }
 
 span {
@@ -241,6 +241,18 @@ a[href^="tel"] {
     margin-bottom: 20px;
 
 }
+main{
+    height:100vh;
+}
+main h3,p{
+    color:black;
+}
+footer{
+    background-color:black;
+    height:100px;
+}
+
+
 
 @media all and (min-width: 1024px) and (max-width: 1280px) {}
 
@@ -287,7 +299,8 @@ a[href^="tel"] {
     span {
         display: none;
     }
-    .contact p{
-        font-size:10px;
+
+    .contact p {
+        font-size: 10px;
     }
 }
