@@ -106,6 +106,16 @@ header {
     height: 100vh;
 }
 
+.top {
+    margin-top: 20px;
+}
+
+.top p {
+    font-family: "jibril";
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
 
 
 h2 {
@@ -114,8 +124,12 @@ h2 {
     text-transform: uppercase;
     font-size: 1em;
     margin-bottom: 50px;
+    text-align:center;
 }
 
+.bottom {
+    padding-bottom: 20px;
+}
 
 .bottom p {
     font-family: "jibril";
@@ -126,8 +140,10 @@ h2 {
 
 h1 {
     text-transform: uppercase;
+    text-align: center;
     font-family: "jibril";
     font-size: 6em;
+    line-height: 100px;
     margin-bottom: 20px;
     background: -moz-radial-gradient(45deg, rgba(177, 147, 71, 1) 0%, rgba(224, 203, 110, 1) 45%, rgba(177, 147, 71, 1) 100%);
     /* ff3.6+ */
@@ -162,14 +178,13 @@ h3 {
     text-align: center
 }
 
-button {
-    outline: none; // this one
+.button {
+    outline: none;
 }
 
 span {
     color: white;
 }
-
 
 /* Button */
 .button {
@@ -205,15 +220,14 @@ span {
 }
 
 .facebook {
-    width: 20px;
+    width: 30px;
     padding-right: 10px;
 }
 
 .instagram {
     padding-left: 10px;
-    width: 20px;
+    width: 30px;
 }
-
 
 a[href^="tel"] {
     color: inherit;
@@ -221,4 +235,59 @@ a[href^="tel"] {
     text-decoration: none;
     /* Remove underline. */
     /* Additional css `propery: value;` pairs here */
+}
+
+.socials {
+    margin-bottom: 20px;
+
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 4em;
+        line-height: 70px;
+    }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+    h1 {
+        font-size: 4em;
+        line-height: 70px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    span {
+        display: none;
+    }
+
+    .contact p {
+        margin-bottom: 5px;
+    }
+}
+
+@media all and (max-width: 480px) {
+    h1 {
+        font-size: 3.5em;
+        line-height: 70px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact p {
+        margin-bottom: 1px;
+    }
+
+    span {
+        display: none;
+    }
+    .contact p{
+        font-size:10px;
+    }
 }
